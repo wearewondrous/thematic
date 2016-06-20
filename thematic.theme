@@ -1,0 +1,25 @@
+<?php
+
+/**
+ * @file
+ * Functions to support theming in the thematic theme.
+ */
+
+
+/**
+ *
+ * implements THEME_preprocess_block and changes Language Switch Block from
+ * Language name to Language code
+ *
+ * @param $variables
+ * @param $hook
+ */
+function thematic_preprocess_links__language_block(&$variables) {
+  if(!isset($variables['links'])) {
+    return;
+  }
+
+  foreach ($variables['links'] as $key => $value) {
+    $variables['links'][$key]['link']['#title'] = $key;
+  }
+}

@@ -1,0 +1,17 @@
+{%
+  set classes = [
+    node.bundle|clean_class,
+    view_mode ? node.bundle|clean_class ~ '--' ~ view_mode|clean_class,
+  ]
+%}
+<article{{ attributes.addClass(classes) }}>
+  <a href="{{ url }}" rel="bookmark">
+    <div class="content">
+      <h3{{ title_attributes }}>
+        {{ label }}
+      </h3>
+
+      {{ content }}
+    </div>
+  </a>
+</article>

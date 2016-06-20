@@ -1,0 +1,7 @@
+// prevent content jump before JS init
+.owl-carousel {
+  display: block;
+  li:not(:first-child) {
+    display: none;
+  }
+}
