@@ -15,7 +15,7 @@
     <js-placeholder token="{{ placeholder_token|raw }}">
 
     {# all the favicon information #}
-    {% include directory ~ '/templates/includes/_favicons.html.twig' %}
+    {% include '@thematic/includes/_favicons.html.twig' %}
     {# #}
   </head>
   <body{{ attributes.addClass(body_classes) }}>
