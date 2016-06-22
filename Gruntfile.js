@@ -7,6 +7,7 @@ module.exports = function(grunt) {
   // Load Grunt tasks automatically
   require('time-grunt')(grunt);
   require('jit-grunt')(grunt, {
+    // help jit find the tasks with alias
     svgcss: 'grunt-svg-css'
   });
 

@@ -31,8 +31,8 @@ This talk contains the experience of several Drupal 8 projects already in produc
 - add a set of favicons
 - setup Sass workflow
 - BrowserSync as auto reload and browser sync feature
-- SVG backgrounds with grunticon
-- JS aggregation (e.g. owl-carousel)
+- SVG backgrounds
+- JS aggregation
 - Extras:
 	- enhance content manager experience
 	- Detail/overview page navigation
@@ -58,12 +58,13 @@ This talk contains the experience of several Drupal 8 projects already in produc
 
 ## Node JS, Grunt and SASS setup
 
+- [gruntjs.com/getting-started](http://gruntjs.com/getting-started)
 - `Grundfile.js` and `package.json`
 - `$ npm install`
-- `grunt` default task
+- run `grunt` default task
 - two step SASS to CSS compression and post processing
-- BrowserSync as auto reload and browser sync feature
-- SVG backgrounds [grunticon](https://github.com/filamentgroup/grunticon)
+- [BrowserSync](https://www.browsersync.io/docs/grunt/) as auto reload and sync feature
+- SVG backgrounds with [svgcss](https://www.npmjs.com/package/grunt-svg-css)
 - JS aggregation (e.g. owl-carousel)
 - Tip:
 	- put `.htaccess` in privat folders like `sass`, `js-src` and `grunt-templates`
@@ -90,12 +91,12 @@ Take home Message:
 ### Step Two: Add SVG Background
 
 - create folder `svg-src/backgrounds`
-- add tasks `svgmin`, `clean`, `grunticon`
-- see `grunt-templates/grunticon/backgrounds.hbs` for Sass template
+- add tasks `svgmin`, `svgcss`
+- see `grunt-templates/svgcss/variables.hbs` for Sass template
 
 ![`Grundfile.js`](screens/svg-backgrounds-grunt-tasks.png)
 
-![`grunt-templates/grunticon/backgrounds.hbs`](screens/svg-backgrounds-hbs.png)
+![`grunt-templates/svgcss/variables.hbs`](screens/svg-backgrounds-hbs.png)
 
 ![`sass/custom/_backgrounds.scss`](screens/svg-backgrounds-hbs-results.png)
 
