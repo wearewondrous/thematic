@@ -6,7 +6,9 @@ module.exports = function(grunt) {
 
   // Load Grunt tasks automatically
   require('time-grunt')(grunt);
-  require('jit-grunt')(grunt);
+  require('jit-grunt')(grunt, {
+    svgcss: 'grunt-svg-css'
+  });
 
   grunt.initConfig({
     pkg: grunt.file.readJSON('package.json'),
@@ -55,18 +57,19 @@ module.exports = function(grunt) {
         }
       }
     },
-    grunticon: {
+    svgcss: {
+      options: {
+        // Task-specific options go here.
+        eol: 'lf',
+        insertfinalnewline: true,
+        previewhtml: null // preview html file to be rendered.
+      },
       backgrounds: {
-        files: [{
-          expand: true,
-          cwd: 'svg-src/backgrounds/dist',
-          src: ['*.svg'],
-          dest: 'sass/custom/backgrounds'
-        }],
         options: {
-          template: 'grunt-templates/grunticon/backgrounds.hbs',
-          cssprefix: '',
-          datasvgcss: '../_backgrounds.scss'
+          csstemplate: 'grunt-templates/svgcss/variables.hbs'
+        },
+        files: {
+          'sass/custom/_backgrounds.scss': ['svg-src/backgrounds/dist/*.svg']
         }
       }
     },
@@ -141,10 +144,10 @@ module.exports = function(grunt) {
   ]);
   grunt.registerTask('backgrounds', [
     'svgmin',
-    'grunticon'
+    'svgcss'
   ]);
   grunt.registerTask('default', [
-    // 'backgrounds', // uncomment to run phantom js every time
+    'backgrounds', // uncomment to run phantom js every time
     'css',
     'uglify',
     'browserSync',
