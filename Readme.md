@@ -51,11 +51,11 @@ This talk contains the experience of several Drupal 8 projects already in produc
 - [realfavicongenerator.net](http://realfavicongenerator.net)
 - put the downloads into `favicons`-folder
 
-![`includes/_favicon.html.twig`](talk/favicon-twig-include.png)
+![`includes/_favicon.html.twig`](screenshots/favicon-twig-include.png)
 
-![`layout/_html.html.twig`](talk/favicon-twig-include-head.png)
+![`layout/_html.html.twig`](screenshots/favicon-twig-include-head.png)
 
-![Favicon Includes in browser head](talk/favicon-include.png)
+![Favicon Includes in browser head](screenshots/favicon-include.png)
 
 
 ## Node JS, Grunt and SASS setup
@@ -85,8 +85,8 @@ This talk contains the experience of several Drupal 8 projects already in produc
 
 	** Pure CSS is like PHP with magic numbers and no functions at all**
 
-![Sass and PostCss config](talk/grunt-sass-postcss-1.png)
-![Watch task](talk/grunt-sass-postcss-2.png)
+![Sass and PostCss config](screenshots/grunt-sass-postcss-1.png)
+![Watch task](screenshots/grunt-sass-postcss-2.png)
 
 
 ### Step Two: Add SVG Background
@@ -95,13 +95,13 @@ This talk contains the experience of several Drupal 8 projects already in produc
 - add tasks `svgmin`, `clean`, `grunticon`
 - see `grunt-templates/grunticon/backgrounds.hbs` for Sass template
 
-![`Grundfile.js`](talk/svg-backgrounds-grunt-tasks.png)
+![`Grundfile.js`](screenshots/svg-backgrounds-grunt-tasks.png)
 
-![`grunt-templates/grunticon/backgrounds.hbs`](talk/svg-backgrounds-hbs.png)
+![`grunt-templates/grunticon/backgrounds.hbs`](screenshots/svg-backgrounds-hbs.png)
 
-![`sass/custom/_backgrounds.scss`](talk/svg-backgrounds-hbs-results.png)
+![`sass/custom/_backgrounds.scss`](screenshots/svg-backgrounds-hbs-results.png)
 
-![`sass/custom/_layout.scss`](talk/svg-backgrounds-sass-include.png)
+![`sass/custom/_layout.scss`](screenshots/svg-backgrounds-sass-include.png)
 
 
 ### Step Three: Style the Article Teaser
@@ -109,9 +109,9 @@ This talk contains the experience of several Drupal 8 projects already in produc
 - create `templates/content/node--article--teaser.html.twig`
 - shape it to be one single anchor and style it
 
-![`templates/content/node--article--teaser.html.twig`](talk/article-teaser-twig.png)
+![`templates/content/node--article--teaser.html.twig`](screenshots/article-teaser-twig.png)
 
-![`sass/custom/_nodes.scss`](talk/article-teaser-sass.png)
+![`sass/custom/_nodes.scss`](screenshots/article-teaser-sass.png)
 
 
 ### Step Four: Make the Article view a Slider
@@ -126,13 +126,13 @@ Take home Message:
 
 **Style as if there was no JS (yet fully loaded)!**
 
-![`Gruntfile.js`](talk/grunt-uglify-1.png)
+![`Gruntfile.js`](screenshots/grunt-uglify-1.png)
 
-![`Gruntfile.js`](talk/grunt-uglify-2.png)
+![`Gruntfile.js`](screenshots/grunt-uglify-2.png)
 
-![`js-src/_owl-carousel-init.js`](talk/owl-carousel-init.png)
+![`js-src/_owl-carousel-init.js`](screenshots/owl-carousel-init.png)
 
-![`sass/custom/_custom-owl-carousel.scss`](talk/owl-carousel-content-jump.png)
+![`sass/custom/_custom-owl-carousel.scss`](screenshots/owl-carousel-content-jump.png)
 
 
 ## Extra One: Article detail Page Styling
@@ -169,4 +169,4 @@ Take home Message:
 - plus a lot of permission denied (image) in the logs
 - interim help: https://github.com/enjoyiacm/unset_html_head_link
 
-![Access Denied pollution by header links](talk/seo-access-denied-bug.png)
+![Access Denied pollution by header links](screenshots/seo-access-denied-bug.png)
