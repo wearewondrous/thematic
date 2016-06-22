@@ -1,7 +1,5 @@
 # Drupal 8 theming with Twig and Sass
 
-{{ TOC }}
-
 **Presentation Date, Location**
 
 [Drupal Developer Days Milan](http://milan2016.drupaldays.org), Italy, June 21-26 2016
@@ -43,7 +41,7 @@ This talk contains the experience of several Drupal 8 projects already in produc
 
 ## The Repo
 
-- find at: Github
+- find at: [github.com/WondrousLLC/thematic](https://github.com/WondrousLLC/thematic)
 
 
 ## Favicon
@@ -81,9 +79,9 @@ This talk contains the experience of several Drupal 8 projects already in produc
 	- z-index, calculation
 	- animation keywords
 
-	Take home Message:
+Take home Message:
 
-	** Pure CSS is like PHP with magic numbers and no functions at all**
+**Pure CSS is like PHP with magic numbers and no functions at all**
 
 ![Sass and PostCss config](screens/grunt-sass-postcss-1.png)
 ![Watch task](screens/grunt-sass-postcss-2.png)
