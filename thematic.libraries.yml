@@ -1,0 +1,9 @@
+base:
+  version: VERSION
+  css:
+    theme:
+      css/styles.min.css: {}
+  js:
+    js/scripts.min.js: {}
+  dependencies:
+    - core/jquery

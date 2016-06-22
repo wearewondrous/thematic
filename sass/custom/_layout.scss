@@ -1,0 +1,10 @@
+#header {
+  background: linear-gradient(to right, #2e3d76, #763287, #cf064e) 0 0;
+  background-size: 400% 100%;
+  animation: animateBackgroundPosition 14s linear infinite;
+  > .section {
+    background: transparent url("#{$hexagon-pattern-repeat}") center center repeat;
+    background-size: 110px;
+    height: 45vh;
+  }
+}

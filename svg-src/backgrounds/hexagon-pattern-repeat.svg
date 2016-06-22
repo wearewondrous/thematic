@@ -1,0 +1,18 @@
+<svg id="Repeat" xmlns="http://www.w3.org/2000/svg" width="500" height="600" viewBox="0 0 500 600">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+        stroke: #fff;
+        stroke-miterlimit: 10;
+        stroke-width: 6px;
+        opacity: .05;
+      }
+    </style>
+  </defs>
+  <title>footer-pattern-repeat</title>
+  <line class="cls-1" y2="600"/>
+  <polygon class="cls-1" points="250 0 0 150 500 450 250 600 0 450 500 150 250 0"/>
+  <line class="cls-1" x1="500" x2="500" y2="600"/>
+  <line class="cls-1" x1="250" x2="250" y2="600"/>
+</svg>

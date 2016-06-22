@@ -1,0 +1,57 @@
+// z-index cssnano example
+//
+//.article {
+//  z-index: 3;
+//  a {
+//    z-index: 8;
+//    > h3 {
+//      z-index: 11;
+//    }
+//  }
+//}
+
+p.teaser {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: large;
+  font-style: italic;
+  margin-bottom: 1.5rem;
+}
+
+.article {
+  font-family: "Source Sans Pro", "Lucida Grande", Verdana, sans-serif;
+}
+
+.article--teaser {
+  a {
+    padding: 1rem;
+    color: white;
+    background: midnightblue url("#{$hexagon-pattern-repeat}") center center repeat;
+    background-size: 110px;
+    display: flex;
+    text-decoration: none;
+    border: none;
+    height: 12rem;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    h3 {
+      text-transform: uppercase;
+      font-weight: bold;
+      font-size: larger;
+    }
+    .content {
+      max-width: 50rem;
+      font-size: large;
+    }
+    &:hover,
+    &:focus {
+      outline: none;
+      box-shadow: inset 0 0 0 6px midnightblue,
+        inset 0 0 0 8px rgba(white, .9);
+    }
+    &:active {
+      color: midnightblue;
+      background: white;
+    }
+  }
+}
