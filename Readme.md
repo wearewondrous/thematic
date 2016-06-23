@@ -1,11 +1,8 @@
 # Drupal 8 theming with Twig and Sass
 
 2016-06-24, 11:30-12:30
-
 [Drupal Developer Days Milan](http://milan2016.drupaldays.org), Italy, June 21-26 2016
-
-[Link to the Programm][http://milan2016.drupaldays.org/node/150]
-
+[Link to the Programm](http://milan2016.drupaldays.org/node/150)
 [github.com/WondrousLLC/thematic](https://github.com/WondrousLLC/thematic)
 
 
