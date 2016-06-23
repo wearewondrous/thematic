@@ -1,8 +1,12 @@
 # Drupal 8 theming with Twig and Sass
 
-**Presentation Date, Location**
+2016-06-24, 11:30-12:30
 
 [Drupal Developer Days Milan](http://milan2016.drupaldays.org), Italy, June 21-26 2016
+
+[Link to the Programm][http://milan2016.drupaldays.org/node/150]
+
+[github.com/WondrousLLC/thematic](https://github.com/WondrousLLC/thematic)
 
 
 **Abstract**
@@ -20,7 +24,7 @@ This talk contains the experience of several Drupal 8 projects already in produc
 ## About the Speaker
 
 **Tassilo Groeper**
-- Full stack developer at [WONDROUS LLC](www.wearewondrous.com) Basel/Switzerland
+- Full stack developer at [WONDROUS LLC](https://www.wearewondrous.com/en) Basel/Switzerland
 - first Drupal 8 pages published with beta-4
 - Clean Coder, originally from Germany
 
@@ -37,11 +41,6 @@ This talk contains the experience of several Drupal 8 projects already in produc
 	- enhance content manager experience
 	- Detail/overview page navigation
 	- SEO Bug in Drupal 8
-
-
-## The Repo
-
-- find at: [github.com/WondrousLLC/thematic](https://github.com/WondrousLLC/thematic)
 
 
 ## Favicon
@@ -156,11 +155,11 @@ Take home Message:
 ### TWIG Routes
 
 - get [Drupal Console](https://github.com/hechoendrupal/DrupalConsole)
-- `$ drupal router:debug` to find paths
+- `$ drupal router:debug` to find view paths
 - `{{ path('view.searchresults.page_1') }}` // relative path
 - `{{ path('entity.node.canonical', {'node': node.id}) }}` // with params
 - `{{ url('view.searchresults.page_1') }}` // absolute path
-- https://chromatichq.com/blog/creating-links-within-twig-templates-using-path-and-url
+- [Creating Links Within Twig Templates Using path() and url()](https://chromatichq.com/blog/creating-links-within-twig-templates-using-path-and-url)
 
 
 ## Extra Three: SEO malus by header links
