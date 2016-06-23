@@ -29,7 +29,7 @@ This talk contains the experience of several Drupal 8 projects already in produc
 
 - Quick jump into a theme setup
 - add a set of favicons
-- setup Sass workflow
+- setup Syntactically Awesome StyleSheets workflow
 - BrowserSync as auto reload and browser sync feature
 - SVG backgrounds
 - JS aggregation
@@ -59,6 +59,7 @@ This talk contains the experience of several Drupal 8 projects already in produc
 ## Node JS, Grunt and SASS setup
 
 - [gruntjs.com/getting-started](http://gruntjs.com/getting-started)
+- Smashing: [How To Harness The Machines: Being Productive With Task Runners](https://www.smashingmagazine.com/2016/06/harness-machines-productive-task-runners/)
 - `Grundfile.js` and `package.json`
 - `$ npm install`
 - run `grunt` default task
