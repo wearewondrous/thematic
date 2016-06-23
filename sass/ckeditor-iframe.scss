@@ -1,12 +1,13 @@
-//custom styles for CKEditor
+// helper functions, colors with no output
+@import "custom/functions";
+@import "custom/colors";
 
+//custom styles for CKEditor
 p.teaser {
-  font-family: Georgia, Cambria, "Times New Roman", Times, serif;
-  font-style: italic;
-  font-size: larger;
+  @include paragraph-teaser()
 }
 
 .button {
   padding: 2px 14px;
-  border: 1px solid black;
+  border: 1px solid $black;
 }

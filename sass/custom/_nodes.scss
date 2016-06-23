@@ -11,9 +11,7 @@
 //}
 
 p.teaser {
-  font-family: Georgia, "Times New Roman", Times, serif;
-  font-size: large;
-  font-style: italic;
+  @include paragraph-teaser();
   margin-bottom: 1.5rem;
 }
 
@@ -24,8 +22,8 @@ p.teaser {
 .article--teaser {
   a {
     padding: 1rem;
-    color: white;
-    background: midnightblue url("#{$hexagon-pattern-repeat}") center center repeat;
+    color: $white;
+    background: $primary-link-color url("#{$hexagon-pattern-repeat}") center center repeat;
     background-size: 110px;
     display: flex;
     text-decoration: none;
@@ -46,12 +44,12 @@ p.teaser {
     &:hover,
     &:focus {
       outline: none;
-      box-shadow: inset 0 0 0 6px midnightblue,
-        inset 0 0 0 8px rgba(white, .9);
+      box-shadow: inset 0 0 0 6px $primary-link-color,
+        inset 0 0 0 8px rgba($white, .9);
     }
     &:active {
-      color: midnightblue;
-      background: white;
+      color: $primary-link-color;
+      background: $white;
     }
   }
 }

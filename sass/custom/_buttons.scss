@@ -1,21 +1,21 @@
 .button {
   appearance: none;
   text-decoration: none;
-  color: midnightblue;
-  border: 1px solid midnightblue;
-  background: white;
+  color: $primary-link-color;
+  border: 1px solid $primary-link-color;
+  background: $white;
   padding: 4px 8px;
   border-radius: 0;
   &:hover,
   &:focus {
-    color: white;
-    background: midnightblue;
-    box-shadow: inset 0 0 0 1px midnightblue,
-      inset 0 0 0 2px rgba(white, .9);
+    color: $white;
+    background: $primary-link-color;
+    box-shadow: inset 0 0 0 1px $primary-link-color,
+      inset 0 0 0 2px rgba($white, .9);
   }
   &:active {
-    color: midnightblue;
-    background: white;
-    box-shadow: inset 0 0 0 2px midnightblue;
+    color: $primary-link-color;
+    background: $white;
+    box-shadow: inset 0 0 0 2px $primary-link-color;
   }
 }
