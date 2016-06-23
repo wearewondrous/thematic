@@ -21,10 +21,13 @@ module.exports = function(grunt) {
         options: {
           outputStyle: 'nested'
         },
-        files: {
-          'css/ckeditor-iframe.css': 'sass/ckeditor-iframe.scss',
-          'css/styles.css': 'sass/styles.scss'
-        }
+        files: [{
+          expand: true,
+          cwd: 'sass',
+          src: ['*.scss'],
+          dest: '../sass',
+          ext: '.css'
+        }]
       }
     },
     postcss: {
@@ -45,8 +48,8 @@ module.exports = function(grunt) {
     },
     uglify: {
       options: {
-        preserveComments: true,
-        sourceMap: true,
+        preserveComments: false,
+        sourceMap: false,
         screwIE8: true
       },
       dist: {
@@ -148,7 +151,7 @@ module.exports = function(grunt) {
     'svgcss'
   ]);
   grunt.registerTask('default', [
-    'backgrounds', // uncomment to run phantom js every time
+    'backgrounds',
     'css',
     'uglify',
     'browserSync',
