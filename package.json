@@ -1,6 +1,9 @@
 {
   "name": "thematic",
   "version": "0.1.0",
+  "scripts": {
+    "sass": "node-sass -w -r --output-style expanded sass/ -o css/"
+  },
   "devDependencies": {
     "autoprefixer": "^6.3.6",
     "cssnano": "^3.7.0",
